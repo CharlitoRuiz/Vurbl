@@ -1,0 +1,36 @@
+npm i -D @playwright/test
+npx playwright install
+
+npx playwright test --headed
+npx playwright test tests/playlist.spec.js  --headed
+npx playwright test tests/search.spec.js  --headed
+
+Headless
+npx playwright test
+
+npx playwright test --browser=firefox
+
+
+Reports
+npm i -D allure-playwright
+
+
+npm install dotenv
+
+
+/* 
+test.beforeEach(async ({ page }) => {
+    // Variables
+    const url = loginData.url, 
+    email = loginData.email, 
+    password = loginData.password
+    // initialization of page object class
+    const loginpage = new loginPage(page)
+    await loginpage.goto(url)
+    await loginpage.login(email, password)
+  }); */
+
+
+
+// Navigate and wait until network is idle
+await page.goto('https://example.com', { waitUntil: 'networkidle' });

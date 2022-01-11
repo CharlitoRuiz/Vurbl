@@ -1,0 +1,12 @@
+{
+"prod": {
+        "url":"https://vurbl.com/",
+        "email":"molsen@vurbl.com",
+        "password":"ABC123xyz!"
+},
+
+"stage": {
+    "url":"https://google.com/",
+    "email":"molsen@vurbl.com",
+    "password":"ABC123xyz!"
+}}
